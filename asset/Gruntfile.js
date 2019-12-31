@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         // Project settings
         ag: {
             vendor: 'vendor',
-            css: 'zf-apigility-welcome/css'
+            css: 'api-tools-welcome/css'
         },
 
         // Watches files for changes and runs tasks based on the changed files

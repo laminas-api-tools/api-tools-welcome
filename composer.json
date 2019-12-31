@@ -1,47 +1,49 @@
 {
-    "name": "zfcampus/zf-apigility-welcome",
-    "description": "Apigility Welcome Screen",
-    "type": "library",
+    "name": "laminas-api-tools/api-tools-welcome",
+    "description": "Laminas API Tools Welcome Screen",
     "license": "BSD-3-Clause",
     "keywords": [
+        "laminas",
+        "api-tools",
         "api",
-        "apigility",
-        "framework",
-        "zf2"
+        "framework"
     ],
-    "homepage": "http://apigility.org/",
+    "homepage": "https://api-tools.getlaminas.org",
     "support": {
-        "email": "apigility-users@zend.com",
-        "irc": "irc://irc.freenode.net/apigility",
-        "source": "https://github.com/zfcampus/zf-apigility-welcome",
-        "issues": "https://github.com/zfcampus/zf-apigility-welcome/issues"
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-welcome/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-welcome",
+        "rss": "https://github.com/laminas-api-tools/api-tools-welcome/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
     },
-    "repositories": [
-        { "type": "composer", "url": "https://packages.zendframework.com/" }
-    ],
+    "config": {
+        "sort-packages": true
+    },
     "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        },
         "branch-alias": {
             "dev-develop": "1.1-dev"
         }
     },
     "require": {
-        "zendframework/zend-loader": "~2.3",
-        "zendframework/zend-mvc": "~2.3",
-        "zendframework/zend-modulemanager": "~2.3",
-        "zendframework/zend-view": "~2.3"
+        "laminas/laminas-loader": "~2.3",
+        "laminas/laminas-modulemanager": "~2.3",
+        "laminas/laminas-mvc": "~2.3",
+        "laminas/laminas-view": "~2.3",
+        "laminas/laminas-zendframework-bridge": "^1.0"
     },
     "require-dev": {
         "fabpot/php-cs-fixer": "*@dev"
     },
     "autoload": {
         "psr-4": {
-            "ZF\\Apigility\\Welcome\\": "src/"
+            "Laminas\\ApiTools\\Welcome\\": "src/"
         },
         "classmap": [
             "Module.php"
         ]
+    },
+    "replace": {
+        "zfcampus/zf-apigility-welcome": "self.version"
     }
 }
