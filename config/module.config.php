@@ -1,7 +1,9 @@
 <?php
+
 /**
- * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2013 Zend Technologies USA Inc. (http://www.zend.com)
+ * @see       https://github.com/laminas-api-tools/api-tools-welcome for the canonical source repository
+ * @copyright https://github.com/laminas-api-tools/api-tools-welcome/blob/master/COPYRIGHT.md
+ * @license   https://github.com/laminas-api-tools/api-tools-welcome/blob/master/LICENSE.md New BSD License
  */
 
 return array(
@@ -14,12 +16,12 @@ return array(
     ),
     'router' => array(
         'routes' => array(
-            'zf-apigility-welcome' => array(
-                'type' => 'Zend\Mvc\Router\Http\Literal',
+            'api-tools-welcome' => array(
+                'type' => 'Laminas\Mvc\Router\Http\Literal',
                 'options' => array(
                     'route'    => '/welcome',
                     'defaults' => array(
-                        'controller' => 'ZF\Apigility\Welcome\Welcome',
+                        'controller' => 'Laminas\ApiTools\Welcome\Welcome',
                         'action'     => 'welcome',
                     ),
                 ),
@@ -28,12 +30,12 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'ZF\Apigility\Welcome\Welcome' => 'ZF\Apigility\Welcome\WelcomeController'
+            'Laminas\ApiTools\Welcome\Welcome' => 'Laminas\ApiTools\Welcome\WelcomeController'
         ),
     ),
     'view_manager' => array(
         'template_path_stack' => array(
-            'zf-apigility-welcome' => __DIR__ . '/../view',
+            'api-tools-welcome' => __DIR__ . '/../view',
         ),
     ),
 );

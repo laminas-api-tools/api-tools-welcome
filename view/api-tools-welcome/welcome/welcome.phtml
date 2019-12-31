@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="/zf-apigility/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="/zf-apigility-welcome/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="/api-tools/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/api-tools-welcome/css/main.css" />
     </head>
 
 
@@ -11,7 +11,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="./" class="ag-welcome-navbar-brand">
-<!--                        <img src="/zf-apigility/img/ag-logo.png">-->
+<!--                        <img src="/api-tools/img/ag-logo.png">-->
                     </a>
                 </div>
             </div>
@@ -20,13 +20,13 @@
         <main class="ag-welcome-masthead" id="content" role="main">
             <div class="container">
 
-                <img src="/zf-apigility-welcome/img/ag-hero.png">
+                <img src="/api-tools-welcome/img/ag-hero.png">
                 <p class="lead">
-                    Apigility is an API Builder, designed to simplify creating 
+                    Laminas API Tools is an API Builder, designed to simplify creating 
                     and maintaining useful, easy to consume, and well-structured APIs.
                 </p>
 
-                <?php if (!class_exists('ZF\Apigility\Admin\Module', false)): ?>
+                <?php if (!class_exists('Laminas\ApiTools\Admin\Module', false)): ?>
                 <p>
                     It is important you have your application in development mode.  The easiest way to
                     accomplish this is by running: 
@@ -46,7 +46,7 @@ php public/index.php development enable
                 <?php endif; ?>
 
                 <p class="ag-masthead-buttons">
-                    <?php if (class_exists('ZF\Apigility\Admin\Module', false)): ?>
+                    <?php if (class_exists('Laminas\ApiTools\Admin\Module', false)): ?>
                     <a href="/admin" class="btn btn-lg ag-welcome-btn-outline">Get Started!</a>
                     <?php endif; ?>
                 </p>
