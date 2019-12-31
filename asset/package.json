@@ -1,32 +1,33 @@
 {
-  "name": "zf-apigility-welcome",
-  "description": "Apigility Welcome Screen Assets",
-  "type": "library",
-  "version": "1.0.0",
-  "license": "BSD-3-Clause",
-  "keywords": [
-    "api",
-    "apigility",
-    "framework",
-    "zf"
-  ],
-  "homepage": "https://apigility.org/",
-  "support": {
-    "issues": "https://github.com/zfcampus/zf-apigility-welcome/issues",
-    "source": "https://github.com/zfcampus/zf-apigility-welcome",
-    "rss": "https://github.com/zfcampus/zf-apigility-welcome/releases.atom",
-    "chat": "https://zendframework-slack.herokuapp.com",
-    "forum": "https://discourse.zendframework.com/c/questions/apigility"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zfcampus/zf-apigility-welcome.git"
-  },
-  "main": "gulpfile.js",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.4",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.1"
-  }
+    "name": "api-tools-welcome",
+    "description": "Laminas API Tools Welcome Screen Assets",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "api",
+        "api-tools",
+        "framework",
+        "laminas"
+    ],
+    "homepage": "https://api-tools.getlaminas.org",
+    "support": {
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-welcome/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-welcome",
+        "rss": "https://github.com/laminas-api-tools/api-tools-welcome/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/laminas-api-tools/api-tools-welcome.git"
+    },
+    "main": "gulpfile.js",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^3.9.4",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^4.0.1"
+    }
 }

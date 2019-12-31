@@ -1,14 +1,16 @@
 <?php
+
 /**
- * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2016 Zend Technologies USA Inc. (http://www.zend.com)
+ * @see       https://github.com/laminas-api-tools/api-tools-welcome for the canonical source repository
+ * @copyright https://github.com/laminas-api-tools/api-tools-welcome/blob/master/COPYRIGHT.md
+ * @license   https://github.com/laminas-api-tools/api-tools-welcome/blob/master/LICENSE.md New BSD License
  */
 
-namespace ZFTest\Apigility\Welcome;
+namespace LaminasTest\ApiTools\Welcome;
 
-use Zend\Mvc\Application;
-use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
-use ZF\Apigility\Welcome\WelcomeController;
+use Laminas\ApiTools\Welcome\WelcomeController;
+use Laminas\Mvc\Application;
+use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 class WelcomeControllerTest extends AbstractHttpControllerTestCase
 {
@@ -16,7 +18,7 @@ class WelcomeControllerTest extends AbstractHttpControllerTestCase
     {
         $config = [
             'modules' => [
-                'ZF\Apigility\Welcome',
+                'Laminas\ApiTools\Welcome',
             ],
             'module_listener_options' => [
                 'config_glob_paths' => [
@@ -29,7 +31,7 @@ class WelcomeControllerTest extends AbstractHttpControllerTestCase
         $appVersion = $r->getNumberOfRequiredParameters() === 2 ? 2 : 3;
 
         if ($appVersion === 3) {
-            array_unshift($config['modules'], 'Zend\Router');
+            array_unshift($config['modules'], 'Laminas\Router');
         }
 
         $this->setApplicationConfig($config);
@@ -39,27 +41,27 @@ class WelcomeControllerTest extends AbstractHttpControllerTestCase
 
     public function testRedirect()
     {
-        $this->dispatch('/zftest-apigility');
+        $this->dispatch('/laminastest-api-tools');
 
         $this->assertRedirect();
-        $this->assertRedirectTo('/zftest-apigility/welcome');
+        $this->assertRedirectTo('/laminastest-api-tools/welcome');
         $this->assertResponseStatusCode(302);
         $this->assertControllerName(WelcomeController::class);
         $this->assertControllerClass('WelcomeController');
         $this->assertActionName('redirect');
-        $this->assertMatchedRouteName('zf-apigility');
+        $this->assertMatchedRouteName('api-tools');
     }
 
     public function testWelcome()
     {
-        $this->dispatch('/zftest-apigility/welcome');
+        $this->dispatch('/laminastest-api-tools/welcome');
 
         $this->assertNotRedirect();
         $this->assertResponseStatusCode(200);
         $this->assertControllerName(WelcomeController::class);
         $this->assertControllerClass('WelcomeController');
         $this->assertActionName('welcome');
-        $this->assertMatchedRouteName('zf-apigility/welcome');
+        $this->assertMatchedRouteName('api-tools/welcome');
 
         $this->assertQuery('.hero');
     }

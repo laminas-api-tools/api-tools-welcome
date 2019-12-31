@@ -4,15 +4,15 @@ var gulp = require('gulp'),
     sass = require('gulp-sass');
 
 gulp.task('styles', function () {
-    return gulp.src('zf-apigility-welcome/css/*.scss')
+    return gulp.src('api-tools-welcome/css/*.scss')
         .pipe(sass())
         .pipe(cleanCss({keepSpecialComments: 0}))
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('zf-apigility-welcome/css'));
+        .pipe(gulp.dest('api-tools-welcome/css'));
 });
 
 gulp.task('watch', function () {
-    gulp.watch('zf-apigility-welcome/css/*.scss', ['styles']);
+    gulp.watch('api-tools-welcome/css/*.scss', ['styles']);
 });
 
 gulp.task('default', ['styles']);
