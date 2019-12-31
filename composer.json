@@ -1,25 +1,34 @@
 {
-    "name": "zfcampus/zf-apigility-welcome",
-    "description": "Apigility Welcome Screen",
-    "type": "library",
+    "name": "laminas-api-tools/api-tools-welcome",
+    "description": "Laminas API Tools Welcome Screen",
     "license": "BSD-3-Clause",
     "keywords": [
+        "laminas",
+        "api-tools",
         "api",
-        "apigility",
-        "framework",
-        "zf2"
+        "framework"
     ],
-    "homepage": "http://apigility.org/",
+    "homepage": "https://api-tools.getlaminas.org",
     "support": {
-        "email": "apigility-users@zend.com",
-        "irc": "irc://irc.freenode.net/apigility",
-        "source": "https://github.com/zfcampus/zf-apigility-welcome",
-        "issues": "https://github.com/zfcampus/zf-apigility-welcome/issues"
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-welcome/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-welcome",
+        "rss": "https://github.com/laminas-api-tools/api-tools-welcome/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
     },
-    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "laminas/laminas-zendframework-bridge": "^1.0"
+    },
     "autoload": {
         "psr-0": {
-            "ZF\\Apigility\\Welcome\\": "src/"
+            "Laminas\\ApiTools\\Welcome\\": "src/"
         }
+    },
+    "replace": {
+        "zfcampus/zf-apigility-welcome": "self.version"
     }
 }
