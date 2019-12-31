@@ -1,9 +1,9 @@
-Apigility Welcome Screen
+Laminas API Tools Welcome Screen
 ========================
 
-[![Build Status](https://travis-ci.org/zfcampus/zf-apigility-welcome.png)](https://travis-ci.org/zfcampus/zf-apigility-welcome)
+[![Build Status](https://travis-ci.org/laminas-api-tools/api-tools-welcome.png)](https://travis-ci.org/laminas-api-tools/api-tools-welcome)
 
-Welcome page for the web interface of the [Apigility](http://www.apigility.org) project.
+Welcome page for the web interface of the [Laminas API Tools](http://www.api-tools.getlaminas.org) project.
 
 
 Installation
