@@ -1,7 +1,7 @@
-Apigility Welcome Screen Assets
+Laminas API Tools Welcome Screen Assets
 ===============================
 
-This directory contains build tools and assets for the `zf-apigility-welcome` module.
+This directory contains build tools and assets for the `api-tools-welcome` module.
 CSS in this directory is geared towards the welcome screen.
 
 Contributing
@@ -20,5 +20,5 @@ At this point, you will have all necessary dependencies.
 ### Making changes
 
 - Run `gulp watch`.
-- Edit and save changes in `zf-apigility/css/main.scss`.
+- Edit and save changes in `api-tools/css/main.scss`.
 - Check in your changes when done, and create a pull request.

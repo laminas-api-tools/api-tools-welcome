@@ -1,12 +1,14 @@
 <?php
+
 /**
- * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2014-2016 Zend Technologies USA Inc. (http://www.zend.com)
+ * @see       https://github.com/laminas-api-tools/api-tools-welcome for the canonical source repository
+ * @copyright https://github.com/laminas-api-tools/api-tools-welcome/blob/master/COPYRIGHT.md
+ * @license   https://github.com/laminas-api-tools/api-tools-welcome/blob/master/LICENSE.md New BSD License
  */
 
-namespace ZF\Apigility\Welcome;
+namespace Laminas\ApiTools\Welcome;
 
-use Zend\ServiceManager\Factory\InvokableFactory;
+use Laminas\ServiceManager\Factory\InvokableFactory;
 
 return [
     'asset_manager' => [
@@ -18,7 +20,7 @@ return [
     ],
     'router' => [
         'routes' => [
-            'zf-apigility' => [
+            'api-tools' => [
                 'may_terminate' => true,
                 'options' => [
                     'defaults' => [
@@ -42,13 +44,17 @@ return [
         ],
     ],
     'controllers' => [
+        // Legacy Zend Framework aliases
+        'aliases' => [
+            \ZF\Apigility\Welcome\WelcomeController::class => WelcomeController::class,
+        ],
         'factories' => [
             WelcomeController::class => InvokableFactory::class,
         ],
     ],
     'view_manager' => [
         'template_path_stack' => [
-            'zf-apigility-welcome' => __DIR__ . '/../view',
+            'api-tools-welcome' => __DIR__ . '/../view',
         ],
     ],
 ];

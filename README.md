@@ -1,10 +1,10 @@
-Apigility Welcome Screen
+Laminas API Tools Welcome Screen
 ========================
 
-[![Build Status](https://secure.travis-ci.org/zfcampus/zf-apigility-welcome.svg?branch=master)](https://secure.travis-ci.org/zfcampus/zf-apigility-welcome)
-[![Coverage Status](https://coveralls.io/repos/github/zfcampus/zf-apigility-welcome/badge.svg?branch=master)](https://coveralls.io/github/zfcampus/zf-apigility-welcome?branch=master)
+[![Build Status](https://travis-ci.org/laminas-api-tools/api-tools-welcome.svg?branch=master)](https://travis-ci.org/laminas-api-tools/api-tools-welcome)
+[![Coverage Status](https://coveralls.io/repos/github/laminas-api-tools/api-tools-welcome/badge.svg?branch=master)](https://coveralls.io/github/laminas-api-tools/api-tools-welcome?branch=master)
 
-Welcome page for the web interface of the [Apigility](http://www.apigility.org) project.
+Welcome page for the web interface of the [Laminas API Tools](http://www.api-tools.getlaminas.org) project.
 
 
 Installation
@@ -13,14 +13,14 @@ Installation
 Run the following `composer` command:
 
 ```console
-$ composer require zfcampus/zf-apigility-welcome
+$ composer require laminas-api-tools/api-tools-welcome
 ```
 
 Alternately, manually add the following to your `composer.json`, in the `require` section:
 
 ```javascript
 "require": {
-    "zfcampus/zf-apigility-welcome": "^1.1"
+    "laminas-api-tools/api-tools-welcome": "^1.1"
 }
 ```
 
@@ -34,13 +34,13 @@ return [
     /* ... */
     'modules' => [
         /* ... */
-        'ZF\Apigility\Welcome',
+        'Laminas\ApiTools\Welcome',
     ],
     /* ... */
 ];
 ```
 
-> ### zf-component-installer
+> ### laminas-component-installer
 >
-> If you use [zf-component-installer](https://github.com/zendframework/zf-component-installer),
-> that plugin will install zf-apigility-welcome as a module for you.
+> If you use [laminas-component-installer](https://github.com/laminas/laminas-component-installer),
+> that plugin will install api-tools-welcome as a module for you.
