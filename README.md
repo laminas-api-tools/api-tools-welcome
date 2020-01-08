@@ -1,7 +1,7 @@
 Laminas API Tools Welcome Screen
 ========================
 
-[![Build Status](https://travis-ci.org/laminas-api-tools/api-tools-welcome.svg?branch=master)](https://travis-ci.org/laminas-api-tools/api-tools-welcome)
+[![Build Status](https://travis-ci.com/laminas-api-tools/api-tools-welcome.svg?branch=master)](https://travis-ci.com/laminas-api-tools/api-tools-welcome)
 [![Coverage Status](https://coveralls.io/repos/github/laminas-api-tools/api-tools-welcome/badge.svg?branch=master)](https://coveralls.io/github/laminas-api-tools/api-tools-welcome?branch=master)
 
 Welcome page for the web interface of the [Laminas API Tools](http://www.api-tools.getlaminas.org) project.
