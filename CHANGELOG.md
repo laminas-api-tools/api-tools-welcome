@@ -22,7 +22,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
-- Nothing.
+- [#10](https://github.com/laminas-api-tools/api-tools-welcome/pull/10) adds links to API Blueprint documentation (when available).
 
 ## 1.1.0 - 2019-12-31
 
