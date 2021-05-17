@@ -1,7 +1,6 @@
 {
     "name": "laminas-api-tools/api-tools-welcome",
     "description": "Laminas API Tools Welcome Screen",
-    "license": "BSD-3-Clause",
     "keywords": [
         "laminas",
         "api-tools",
@@ -9,27 +8,15 @@
         "framework"
     ],
     "homepage": "https://api-tools.getlaminas.org",
-    "support": {
-        "docs": "https://api-tools.getlaminas.org/documentation",
-        "issues": "https://github.com/laminas-api-tools/api-tools-welcome/issues",
-        "source": "https://github.com/laminas-api-tools/api-tools-welcome",
-        "rss": "https://github.com/laminas-api-tools/api-tools-welcome/releases.atom",
-        "chat": "https://laminas.dev/chat",
-        "forum": "https://discourse.laminas.dev"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "laminas": {
-            "module": "Laminas\\ApiTools\\Welcome"
-        }
-    },
+    "license": "BSD-3-Clause",
     "require": {
         "php": "^5.6 || ^7.0",
         "laminas/laminas-mvc": "^2.7.15 || ^3.0.4",
         "laminas/laminas-view": "^2.9",
         "laminas/laminas-zendframework-bridge": "^1.0"
+    },
+    "replace": {
+        "zfcampus/zf-apigility-welcome": "^1.1.0"
     },
     "require-dev": {
         "laminas/laminas-coding-standard": "~1.0.0",
@@ -39,6 +26,14 @@
         "laminas/laminas-serializer": "^2.8",
         "laminas/laminas-test": "^2.6.1 || ^3.1",
         "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.5"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laminas": {
+            "module": "Laminas\\ApiTools\\Welcome"
+        }
     },
     "autoload": {
         "psr-4": {
@@ -60,7 +55,12 @@
         "test": "phpunit --colors=always",
         "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
     },
-    "replace": {
-        "zfcampus/zf-apigility-welcome": "^1.1.0"
+    "support": {
+        "issues": "https://github.com/laminas-api-tools/api-tools-welcome/issues",
+        "forum": "https://discourse.laminas.dev",
+        "chat": "https://laminas.dev/chat",
+        "source": "https://github.com/laminas-api-tools/api-tools-welcome",
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "rss": "https://github.com/laminas-api-tools/api-tools-welcome/releases.atom"
     }
 }
