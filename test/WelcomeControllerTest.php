@@ -1,17 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 namespace LaminasTest\ApiTools\Welcome;
 
 use Laminas\ApiTools\Welcome\WelcomeController;
 use Laminas\Mvc\Application;
 use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
+use ReflectionClass;
+
+use function array_unshift;
 
 class WelcomeControllerTest extends AbstractHttpControllerTestCase
 {
     protected function setUp(): void
     {
         $config = [
-            'modules' => [
+            'modules'                 => [
                 'Laminas\ApiTools\Welcome',
             ],
             'module_listener_options' => [
@@ -21,7 +26,7 @@ class WelcomeControllerTest extends AbstractHttpControllerTestCase
             ],
         ];
 
-        $r = (new \ReflectionClass(Application::class))->getConstructor();
+        $r          = (new ReflectionClass(Application::class))->getConstructor();
         $appVersion = $r->getNumberOfRequiredParameters() === 2 ? 2 : 3;
 
         if ($appVersion === 3) {

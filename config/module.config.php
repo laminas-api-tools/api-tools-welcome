@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Laminas\ApiTools\Welcome;
 
 use Laminas\ServiceManager\Factory\InvokableFactory;
@@ -12,21 +14,21 @@ return [
             ],
         ],
     ],
-    'router' => [
+    'router'        => [
         'routes' => [
             'api-tools' => [
                 'may_terminate' => true,
-                'options' => [
+                'options'       => [
                     'defaults' => [
                         'controller' => WelcomeController::class,
                         'action'     => 'redirect',
                     ],
                 ],
-                'child_routes' => [
+                'child_routes'  => [
                     'welcome' => [
-                        'type' => 'literal',
+                        'type'    => 'literal',
                         'options' => [
-                            'route' => '/welcome',
+                            'route'    => '/welcome',
                             'defaults' => [
                                 'controller' => WelcomeController::class,
                                 'action'     => 'welcome',
@@ -37,16 +39,16 @@ return [
             ],
         ],
     ],
-    'controllers' => [
+    'controllers'   => [
         // Legacy Zend Framework aliases
-        'aliases' => [
+        'aliases'   => [
             \ZF\Apigility\Welcome\WelcomeController::class => WelcomeController::class,
         ],
         'factories' => [
             WelcomeController::class => InvokableFactory::class,
         ],
     ],
-    'view_manager' => [
+    'view_manager'  => [
         'template_path_stack' => [
             'api-tools-welcome' => __DIR__ . '/../view',
         ],

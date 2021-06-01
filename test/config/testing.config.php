@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace LaminasTest\ApiTools\Welcome;
 
 return [
-    'router' => [
+    'router'       => [
         'routes' => [
             'api-tools' => [
-                'type' => 'literal',
+                'type'    => 'literal',
                 'options' => [
                     'route' => '/laminastest-api-tools',
                 ],

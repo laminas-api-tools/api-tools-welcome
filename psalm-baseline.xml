@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="4.7.3@38c452ae584467e939d55377aaf83b5a26f19dd1">
   <file src="src/Module.php">
-    <MissingReturnType occurrences="1">
-      <code>getConfig</code>
-    </MissingReturnType>
+    <MixedInferredReturnType occurrences="1">
+      <code>array&lt;string, mixed&gt;</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="1">
+      <code>include __DIR__ . '/../config/module.config.php'</code>
+    </MixedReturnStatement>
   </file>
   <file src="test/WelcomeControllerTest.php">
     <PossiblyNullReference occurrences="1">
