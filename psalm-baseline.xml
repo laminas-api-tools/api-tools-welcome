@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="3.16@d03e5ef057d6adc656c0ff7e166c50b73b4f48f3">
+<files psalm-version="4.7.3@38c452ae584467e939d55377aaf83b5a26f19dd1">
   <file src="src/Module.php">
     <MissingReturnType occurrences="1">
       <code>getConfig</code>
     </MissingReturnType>
   </file>
-  <file src="src/WelcomeController.php">
-    <MissingReturnType occurrences="2">
-      <code>redirectAction</code>
-      <code>welcomeAction</code>
-    </MissingReturnType>
-  </file>
   <file src="test/WelcomeControllerTest.php">
-    <MissingReturnType occurrences="3">
-      <code>setUp</code>
-      <code>testRedirect</code>
-      <code>testWelcome</code>
-    </MissingReturnType>
     <PossiblyNullReference occurrences="1">
       <code>getNumberOfRequiredParameters</code>
     </PossiblyNullReference>
