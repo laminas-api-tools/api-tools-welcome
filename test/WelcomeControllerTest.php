@@ -8,7 +8,7 @@ use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 class WelcomeControllerTest extends AbstractHttpControllerTestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $config = [
             'modules' => [
@@ -33,7 +33,7 @@ class WelcomeControllerTest extends AbstractHttpControllerTestCase
         parent::setUp();
     }
 
-    public function testRedirect()
+    public function testRedirect(): void
     {
         $this->dispatch('/laminastest-api-tools');
 
@@ -46,7 +46,7 @@ class WelcomeControllerTest extends AbstractHttpControllerTestCase
         $this->assertMatchedRouteName('api-tools');
     }
 
-    public function testWelcome()
+    public function testWelcome(): void
     {
         $this->dispatch('/laminastest-api-tools/welcome');
 
