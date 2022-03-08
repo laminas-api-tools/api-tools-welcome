@@ -1,7 +1,7 @@
 Laminas API Tools Welcome Screen
 ========================
 
-[![Build Status](https://github.com/laminas-api-tools/api-tools-welcome)/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/laminas-api-tools/api-tools-welcome)/actions/workflows/continuous-integration.yml)
+[![Build Status](https://github.com/laminas-api-tools/api-tools-welcome/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/laminas-api-tools/api-tools-welcome/actions/workflows/continuous-integration.yml)
 
 > ## 🇷🇺 Русским гражданам
 >
